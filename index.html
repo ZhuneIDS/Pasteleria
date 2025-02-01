@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunelle Pastelería</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="top-bar">
+        <p>¡Compra aquí, recoge en cualquiera de nuestras sucursales!</p>
+        <div class="auth-links">
+            <a href="#" id="register-link">Registrar</a> | <a href="#" id="login-link">Iniciar sesión</a>
+        </div>
+    </header>
+    
+    <nav class="navbar">
+        <div class="logo"><a href="#" id="home-link">Lunelle</a></div>
+        <ul class="nav-links">
+            <li><a href="#main-section" id="home-nav">Inicio</a></li>
+            <li><a href="#">De línea</a></li>
+            <li><a href="#">Sobre pedido</a></li>
+            <li><a href="#">Para regalar</a></li>
+            <li><a href="#">De boda</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Búsqueda</a></li>
+            <li><a href="#">Su pedido</a></li>
+        </ul>
+    </nav>
+
+    <section class="auth-section" id="login-section" style="display: none;">
+        <div class="auth-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <label for="login-username">Usuario:</label>
+                <input type="text" id="login-username" required>
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="auth-section" id="register-section" style="display: none;">
+        <div class="auth-container">
+            <h2>Registrar</h2>
+            <form id="register-form">
+                <label for="register-username">Usuario:</label>
+                <input type="text" id="register-username" required>
+                <label for="register-email">Correo:</label>
+                <input type="email" id="register-email" required>
+                <label for="register-password">Contraseña:</label>
+                <input type="password" id="register-password" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="main-page" id="main-section">
+        <h2 class="main-title">Populares de Temporada</h2>
+        <div class="pastel-gallery">
+            <div class="pastel-item">
+                <img src="assets/pastelchocolate.png" alt="Pastel de Chocolate">
+                <p>Pastel de Chocolate</p>
+                <p class="price">$700.00</p>
+            </div>
+            <div class="pastel-item">
+                <img src="assets/pastelcute.png" alt="Pastel Cute">
+                <p>Pastel Cute</p>
+                <p class="price">$850.00</p>
+            </div>
+            <div class="pastel-item">
+                <img src="assets/pasteldreams.png" alt="Pastel Dreams">
+                <p>Pastel Dreams</p>
+                <p class="price">$1000.00</p>
+            </div>
+            <div class="pastel-item">
+                <img src="assets/pastelhappy.png" alt="Pastel Happy">
+                <p>Pastel Happy Birthday</p>
+                <p class="price">$850.00</p>
+            </div>
+            <div class="pastel-item">
+                <img src="assets/pastelkitty.png" alt="Pastel Kitty">
+                <p>Pastel Hello Kitty</p>
+                <p class="price">$999.00</p>
+            </div>
+            <div class="pastel-item">
+                <img src="assets/pastelmiku.png" alt="Pastel Miku">
+                <p>Pastel Hatsune Miku</p>
+                <p class="price">$1500.00</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

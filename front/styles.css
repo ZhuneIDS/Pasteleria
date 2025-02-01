@@ -1,0 +1,176 @@
+/* styles.css */
+
+/* Importación de fuentes de Google Fonts (comentado por ahora) */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;500;700&display=swap'); */
+
+/* Estilos generales del cuerpo de la página */
+body {
+    margin: 0; /* Elimina el margen predeterminado */
+    font-family: 'Quicksand', sans-serif; /* Fuente principal */
+    background-color: #fce4ec; /* Color de fondo pastel */
+    color: #4a4a4a; /* Color de texto principal */
+}
+
+/* Estilos para la barra superior */
+.top-bar {
+    background-color: #f8bbd0; /* Color de fondo */
+    color: white; /* Color de texto */
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 20px; /* Espaciado interno */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilos para los enlaces de autenticación en la barra superior */
+.auth-links a {
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Texto en negrita */
+    color: #ff4081; /* Color del texto */
+    padding: 8px 12px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background 0.3s, color 0.3s; /* Transición suave */
+}
+
+/* Efecto hover para los enlaces de autenticación */
+.auth-links a:hover {
+    background-color: #ff80ab; /* Cambia el color de fondo */
+    color: white; /* Cambia el color del texto */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #f48fb1; /* Color de fondo */
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 15px; /* Espaciado interno */
+}
+
+/* Estilos para la lista de enlaces de navegación */
+.nav-links {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex;
+    gap: 20px; /* Espacio entre elementos */
+    margin-right: 20px; /* Margen derecho */
+}
+
+/* Estilos para cada ítem de la lista de navegación */
+.nav-links li {
+    display: inline; /* Muestra los ítems en línea */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px 15px; /* Espaciado interno */
+    transition: 0.3s; /* Transición suave */
+    font-size: 18px; /* Tamaño de fuente */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Efecto hover para los enlaces de navegación */
+.nav-links a:hover {
+    background-color: #e57399; /* Cambia el color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el logo */
+.logo a {
+    font-family: 'Playfair Display', serif; /* Fuente del logo */
+    font-size: 36px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilos para la galería de pasteles */
+.pastel-gallery {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    gap: 20px; /* Espacio entre elementos */
+    margin-top: 40px; /* Margen superior */
+}
+
+/* Estilos para cada ítem de la galería de pasteles */
+.pastel-item {
+    text-align: center; /* Centra el texto */
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+    background: white; /* Color de fondo */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 280px; /* Ancho máximo */
+    width: 100%; /* Ancho completo */
+}
+
+/* Efecto hover para los ítems de la galería */
+.pastel-item:hover {
+    transform: scale(1.1); /* Escala el elemento al hacer hover */
+}
+
+/* Estilos para las imágenes de los pasteles */
+.pastel-item img {
+    width: 100%; /* Ancho completo */
+    height: 250px; /* Altura fija */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para las secciones de autenticación (login y registro) */
+.auth-section {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    background-color: rgba(244, 143, 177, 0.2); /* Color de fondo con transparencia */
+}
+
+/* Estilos para el contenedor de autenticación */
+.auth-container {
+    background: white; /* Color de fondo */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centra el texto */
+    max-width: 400px; /* Ancho máximo */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos para el título de las secciones de autenticación */
+.auth-container h2 {
+    font-family: 'Playfair Display', serif; /* Fuente del título */
+    color: #f48fb1; /* Color del texto */
+    font-size: 28px; /* Tamaño de fuente */
+}
+
+/* Estilos para los campos de entrada en las secciones de autenticación */
+.auth-container input {
+    width: 100%; /* Ancho completo */
+    padding: 0.7rem; /* Espaciado interno */
+    margin: 0.5rem 0; /* Margen superior e inferior */
+    border: 1px solid #f48fb1; /* Borde */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilos para los botones en las secciones de autenticación */
+.auth-container button {
+    padding: 0.7rem 1.5rem; /* Espaciado interno */
+    background-color: #f48fb1; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background 0.3s; /* Transición suave */
+}
+
+/* Efecto hover para los botones de autenticación */
+.auth-container button:hover {
+    background-color: #e57399; /* Cambia el color de fondo */
+}

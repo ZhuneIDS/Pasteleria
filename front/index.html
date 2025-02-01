@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lunelle Pastelería</title>
+    <!-- Enlace a la hoja de estilos CSS -->
     <link rel="stylesheet" href="/styles.css">
+    <!-- Enlace a FontAwesome para íconos -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Barra superior con mensaje y enlaces de autenticación -->
     <header class="top-bar">
         <p>¡Compra aquí, recoge en cualquiera de nuestras sucursales!</p>
         <div class="auth-links">
@@ -15,6 +19,7 @@
         </div>
     </header>
     
+    <!-- Barra de navegación principal -->
     <nav class="navbar">
         <div class="logo"><a href="#" id="home-link">Lunelle</a></div>
         <ul class="nav-links">
@@ -30,6 +35,7 @@
         </ul>
     </nav>
 
+    <!-- Sección de inicio de sesión (oculta por defecto) -->
     <section class="auth-section" id="login-section" style="display: none;">
         <div class="auth-container">
             <h2>Iniciar Sesión</h2>
@@ -43,6 +49,7 @@
         </div>
     </section>
 
+    <!-- Sección de registro (oculta por defecto) -->
     <section class="auth-section" id="register-section" style="display: none;">
         <div class="auth-container">
             <h2>Registrar</h2>
@@ -58,9 +65,11 @@
         </div>
     </section>
 
+    <!-- Sección principal de la página con galería de pasteles -->
     <section class="main-page" id="main-section">
         <h2 class="main-title">Populares de Temporada</h2>
         <div class="pastel-gallery">
+            <!-- Cada pastel es un ítem en la galería -->
             <div class="pastel-item">
                 <img src="assets/pastelchocolate.png" alt="Pastel de Chocolate">
                 <p>Pastel de Chocolate</p>
@@ -94,6 +103,7 @@
         </div>
     </section>
 
+    <!-- Enlace al archivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
